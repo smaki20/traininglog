@@ -13,7 +13,7 @@ def calculate_max_weight(weight: float, reps: int):
 
 
 def calc_percentage(num: float, percentage: int):
-    return round(num / 100 * percentage, 1)
+    return round(num / 100 * percentage, 0)
 
 
 def training_folder(iter_num: int):
