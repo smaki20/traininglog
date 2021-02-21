@@ -41,16 +41,10 @@ def Main():
                     print(err)
 
             elif user_input == 3:
-                if iter_num > 0:
-                    email_input = input(
-                        'Give email address and password separated by comma: ').split(',')
-                    send_program_by_mail(
-                        iter_num, email_input[0], email_input[1])
-                else:
-                    email_input = input(
-                        'Give iteration number, email address and password separated by comma: ').split(',')
-                    send_program_by_mail(
-                        email_input[0], email_input[1], email_input[2])
+                email_input = input(
+                    'Give iteration number, email address and password separated by comma: ').split(',')
+                send_program_by_mail(
+                    email_input[0], email_input[1], email_input[2])
 
             elif user_input == 4:
                 day = input('Give date of training e.g 2020-30-02: ')
