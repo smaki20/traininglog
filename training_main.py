@@ -17,6 +17,7 @@ def Main():
             if user_input == 5:
                 print("------------ EXITING --------------- \n\n")
                 break
+
             elif user_input == 1:
                 movement_input_list = input(
                     'Give movement, weight used and reps done separated by a comma (e.g squat,75,10). \n Input:  ').split(',')
@@ -27,6 +28,7 @@ def Main():
                     max_weight = calculate_max_weight(
                         float(movement_input_list[1]), int(movement_input_list[2]))
                     print('Your max weight is: ', max_weight)
+
             elif user_input == 2:
                 iter_num = int(
                     input('Give number of training iteration (e.g 1 (First 1-4 wk set etc)). \n Input: '))
@@ -37,8 +39,8 @@ def Main():
                 except NameError as err:
                     print('Calculated max needed, but not found')
                     print(err)
-            elif user_input == 3:
 
+            elif user_input == 3:
                 if iter_num > 0:
                     email_input = input(
                         'Give email address and password separated by comma: ').split(',')

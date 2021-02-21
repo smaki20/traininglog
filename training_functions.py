@@ -7,7 +7,7 @@ def calculate_ninety(max_weight: float):
 
 
 def calculate_max_weight(weight: float, reps: int):
-    max_unrounded = weight * (1 + reps / 33)
+    max_unrounded = weight * (36 / (37 - reps))
     max_weight = round(max_unrounded, 1)
     return max_weight
 
